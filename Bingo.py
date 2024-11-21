@@ -105,10 +105,10 @@ def visualizar_compras():
     if len(compras) == 0:
         print("No se han realizado compras aún.")
     else:
-        print(f"{'Nombre':<20}{'Fecha':<20}{'Cantidad':<10}{'Total (S/)':<10}")
+        print(f"|{'Nombre':<20}{'Fecha':<20}{'Cantidad':<10}{'Total (S/)':<10}|")
         total_recaudado = 0
         for compra in compras:
-            print(f"{compra['nombre']:<20}{compra['fecha']:<20}{compra['cantidad']:<10}{compra['costo_total']:<10}")
+            print(f"|{compra['nombre']:<20}{compra['fecha']:<20}{compra['cantidad']:<10}{compra['costo_total']:<10}|")
             total_recaudado += compra['costo_total']
         print(f"\nTotal recaudado: S/ {total_recaudado}")
 
