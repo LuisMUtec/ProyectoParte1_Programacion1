@@ -53,7 +53,7 @@ def comprar_bingos():
             print(f"Número de serie: {bingo['serie']}")
             imprimir_bingo(bingo["numeros"])
     else:
-        print("Compra cancelada.")
+        print("Compra cancelada")
 
 
 # Función para generar Bingos
